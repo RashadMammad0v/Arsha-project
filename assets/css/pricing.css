@@ -1,0 +1,129 @@
+.pricing{
+    height: 900px;
+     padding: 50px 0px;
+}
+
+.pricing .pricing-title h2{
+    color:#0c3c53;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.pricing .pricing-title p{
+    font-size: 18px;
+    color: gray;
+    text-align: center;
+    margin-bottom:50px;
+}
+
+.pricing .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.pricing .row .col-4{
+   
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    width: 32%;
+    height: 520px;
+    background-color: white;
+    padding: 60px;
+    align-items: center;
+    transition: 0.4s ease;
+}
+
+.pricing ul{
+    padding: 0;
+}
+
+.pricing li{
+    color: gray;
+}
+
+.pricing .row h5{
+    color: #074765;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.pricing .row h4{
+    color: #074765;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.pricing .row p{
+    color: #00a6eb;
+    font-size: 17px;
+}
+.pricing .bi-check2{
+    font-weight: bold;
+    font-size: 22px;
+    color: rgb(29, 161, 29);
+}
+
+.bi-x{
+color: rgb(141, 141, 138);
+font-weight: bold;
+font-size: 22px;
+}
+
+.pricing button{
+    margin-top: 20px;
+    color: #00a6eb ;
+    padding: 8px 19px;
+    background-color:transparent ;
+    border: 1px solid  #00a6eb ;
+    border-radius: 30px;
+
+}
+.pricing  button:hover{
+    background-color: #00a6eb;
+    color: white;
+}
+
+@media screen and (max-width: 1024px)  {
+    .pricing .row .col-4{
+        padding: 20px;
+    }
+    
+}
+@media screen and (max-width: 1440px)  {
+    .pricing .row .col-4{
+        padding: 20px;
+    }
+    
+}
+@media screen and (max-width: 768px){
+    .pricing .row .col-4{
+        text-align: center;
+        padding: 5px;
+    }
+    .pricing .row .col-4 li{
+        font-size: 14px;
+    }
+    .pricing .row .col-4 h5,h4{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 425px){
+    .pricing .row{
+        justify-content: center;
+    }
+    .pricing{
+        height: auto;
+    }
+    
+    .pricing .row .col-4{
+        margin-bottom: 10px;
+        width: 80%;
+        text-align: center;
+        padding: 5px;
+    }
+    .pricing .row .col-4 li{
+        font-size: 14px;
+    }
+    .pricing .row .col-4 h5,h4{
+        font-size: 17px;
+    }
+}

@@ -1,0 +1,50 @@
+.vendors{
+    height: 120px;
+    background-color:#f3f5fa;
+    display: flex;
+    align-items: center;
+}
+.vendors ul li img{
+    filter: grayscale(100);
+    width: 70px;
+    height: 30px;
+
+}
+.vendors ul li img:hover{
+    cursor: pointer;
+    filter: grayscale(0);
+}
+.vendors ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .vendors{
+        height: 90px;
+    }
+    .vendors ul li img{
+        width: 60px;
+        height: 25px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .vendors{
+        height: 90px;
+    }
+    .vendors ul li img{
+        width: 40px;
+        height: 20px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .vendors{
+        height: 90px;
+    }
+    .vendors ul li img{
+        width: 30px;
+        height: 20px;
+    }
+}

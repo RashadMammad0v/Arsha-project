@@ -1,0 +1,249 @@
+.navbar a{
+    margin-left: 20px;
+    text-decoration: none;
+}
+.navbar button{
+    margin-left: 40px;
+}
+
+.navbar{
+  
+    padding: 20px 0px;
+    background-color: #37517e;
+}
+
+.navbar-items{
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .col-3{
+    display: flex;
+    justify-content: flex-start;
+}
+.navbar .col-3 h2{
+    color: white;
+}
+.navbar-items a {
+    color: white;
+}
+.navbar-items a:hover {
+    color:#00a6eb;
+}
+.navbar .col-9 button{
+    color: white;
+    padding: 6px 15px;
+    background-color:transparent ;
+    border: 1px solid  #00a6eb ;
+    border-radius: 30px;
+
+}
+.navbar .col-9  button:hover{
+    background-color: #00a6eb;
+}
+
+.navbar .col-9{
+    position: relative;
+}
+.drpdwn-content{
+    /* margin-top: 10px; */
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding: 10px 0px;
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    z-index: 222;
+    transition: 2s ease;
+}
+.drpdwn-content li {
+    padding: 8px 18px;
+    font-size: 15px;
+    text-transform: none;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+}
+.drpdwn-content a{
+    color: #0c3c53;
+}
+.drpdwn-content a:hover{
+    color:#00a6eb
+}
+.drpdwn-content i{
+    color: #0c3c53;
+    margin-left: 10px;
+}
+.drpdwn:hover .drpdwn-content {
+    display: block;
+    transition: 0.4s ease;
+  }
+
+
+.sub-drpdwn{ 
+    width: 190px;
+    top: 30%;
+    right: 100%;
+    background-color: aliceblue;
+    border-radius: 5px;
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    z-index: 222;
+    padding: 10px 0px;
+    transition: 2s ease;
+   
+}
+.sub-drpdwn li {
+    padding: 8px 18px;
+    font-size: 15px;
+    text-transform: none;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.sub-drpdwn a{
+    color: #0c3c53;
+}
+.sub-drpdwn a:hover{
+    color:#00a6eb
+}
+
+.subdrp{
+    display: flex;
+    align-items: center;
+}
+.subdrp:hover .sub-drpdwn {
+    display: block;
+  }
+
+/*--------------Navbar-for-mobile---------*/
+  
+.navbar-for-mobile{
+    display: none;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: -100px;
+    background: rgba(40, 58, 90, 0.9);
+    transition: 0.3s;
+    z-index: 96547;
+  }
+  .navbar-items-for-mobile{
+    display: block;
+    position: absolute;
+    top: 55px;
+    width: 90%;
+    height: auto;
+    left: 15px;
+    padding: 10px ;
+    border-radius: 10px;
+    background-color: #fff;
+    overflow-y: auto;
+    transition: 0.3s;
+  }
+  .navbar-for-mobile.active{
+   display: block;
+  }
+  
+  .navbar-for-mobile ul a{
+    list-style-type: none;
+    text-decoration: none;
+    color: #0c3c53;
+
+  }
+  .navbar-for-mobile li{
+    margin-bottom:10px ;
+    margin-left: 15px;
+  }
+  .bi-list{
+    cursor: pointer;
+    display: none;
+  }
+  #closesvg{
+    color: white;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+
+  }
+  .navbar-for-mobile button{
+    color: #00a6eb;
+    padding: 6px 15px;
+    background-color:transparent ;
+    border: 1px solid  #00a6eb ;
+    border-radius: 30px;
+
+}
+.navbar-for-mobile  button:hover{
+    color: white;
+    background-color: #00a6eb;
+}
+.navbar-for-mobile .sub-drpdwn{
+    left: 100%;
+    top: 20%;
+}
+
+/*--------------------------------------------------------*/
+
+@media screen and (max-width: 1024px) {
+    .drpdwn a{
+        display: flex;
+        align-items: center;
+    }
+    .navbar .col-9 button{
+        font-size: 12px;
+        padding: 1px 21px;
+    }
+    .bi-list{
+        display: none;
+    }
+}
+@media screen and (max-width: 1440px) {
+    .drpdwn a{
+        display: flex;
+        align-items: center;
+    }
+    .navbar .col-9 button{
+        font-size: 12px;
+        padding: 1px 21px;
+    }
+    .bi-list{
+        display: none;
+    }
+}
+@media screen and (max-width: 768px) {
+  .navbar-items{
+    display: none;
+  }
+  .bi-list{
+    display:block;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: end;
+  }
+  
+ 
+}
+
+@media screen and (max-width: 1000px) {
+    .navbar-items{
+      display: none;
+    }
+    .bi-list{
+      display:block;
+      color: white;
+      font-size: 25px;
+      display: flex;
+      justify-content: end;
+    }
+    
+  }

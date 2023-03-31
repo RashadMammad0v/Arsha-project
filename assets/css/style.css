@@ -1,0 +1,18 @@
+@import url(./navbar.css);
+@import url(./main.css);
+@import url(./vendors.css);
+@import url(./Aboutus.css);
+@import url(./FAQ.css);
+@import url(./statistic.css);
+@import url(./services.css);
+@import url(./calltoaction.css);
+@import url(./portfolio.css);
+@import url(./team.css);
+@import url(./pricing.css);
+@import url(./contact.css);
+@import url(./footer.css);
+@import url(./backtotop.css);
+.container-fluid{
+    padding: 0;
+}
+
